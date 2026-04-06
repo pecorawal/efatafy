@@ -1,0 +1,26 @@
+# --- Framework Principal e Servidor ---
+fastapi==0.110.0
+uvicorn[standard]==0.27.1
+
+# --- Banco de Dados Relacional e Vetorial ---
+SQLAlchemy==2.0.27
+psycopg2-binary==2.9.9
+pgvector==0.2.5
+
+# --- Migrações de Banco de Dados (Essencial para Produção) ---
+alembic==1.13.1
+
+# --- Validação de Dados e Configurações ---
+pydantic==2.6.1
+pydantic-settings==2.1.0
+python-multipart==0.0.9  # Necessário para o upload da foto de perfil
+
+# --- Integrações Assíncronas (Vídeo, WhatsApp e E-mail) ---
+httpx==0.26.0
+
+# --- Segurança e Autenticação ---
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+
+# --- Inteligência Artificial (Opcional para processamento inicial) ---
+openai==1.12.0
