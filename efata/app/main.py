@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from datetime import datetime
+from .database import engine, Base, get_db
 
 # Importações locais (vamos criar os models no futuro)
 from .database import engine, Base, get_db
